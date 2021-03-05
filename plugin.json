@@ -1,0 +1,29 @@
+{
+	"id": "nodebb-plugin-makesmart-gallery",
+	"url": "https://github.com/me-cooper/nodebb-plugin-makesmart-gallery",
+	"main": "./library.js",
+	"hooks": [
+		{
+			"hook": "static:app.load", "method": "init"
+		},
+		{
+			"hook": "filter:parse.post", "method": "convertImagesToGallery"
+		}
+	],
+	"staticDirs": {
+		"static": "./static"
+	},
+	"less": [
+		"static/style.less"
+	],
+	"scripts": [
+		"static/lib/main.js"
+	],
+	"acpScripts": [
+		"static/lib/admin.js"
+	],
+	"templates": "static/templates",
+	"modules": {
+		"swiper.js": "node_modules/swiper/swiper-bundle.min.js"
+	}
+}

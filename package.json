@@ -1,0 +1,10 @@
+{
+  "name": "nodebb-plugin-makesmart-gallery",
+  "version": "1.0.0",
+  "description": "Simple Image Galleries ",
+  "main": "library.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "swiper": "^6.4.15"
+  }
+}
